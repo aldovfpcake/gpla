@@ -1,0 +1,70 @@
+App Name	planilla 4089  VERSION Nº3	
+App Version	2007-08-21 13:27:46	
+Setup Version	3.0.0.0	
+Frame Bitmap		
+Frame Caption	planilla 4089  VERSION Nº3 Setup	
+Dialog Caption Base	planilla 4089  VERSION Nº3	
+Usage String	Usage:  Setup	
+About Box String	ALDO RAMON VALENTE\n\nThis installation was created using the Visual FoxPro Setup Wizard.	
+Check Modules	"Fox_4000001,Microsoft Visual FoxPro, graph, MS Graph, ed, MS Draw, msinfo, MS Info, MSOfficeWClass, Microsoft Office Manager, MOM Class, Office Shortcut Bar"	
+Source Directory	\\192.168.1.10\F\GPLA\SETIUP\NETSETUP\	
+MSAPPS Mode	local	
+MSAPPS Connect	server	
+Inf File Name	SETUP.INF	
+Help File Name	ACMSETUP.HLP	
+Setup Status	"r×ûÙäîhOtü0PØ0|ô`‹køTQ™Ê®œ˜¤ønFgàkìŸÜm¦K·u®üìH""÷¨7ó•÷N’À²,ñÄ˜i~Z:´R$p)¶(L?Æú½wÖöø…àáPw€Ì<^éæjhU8×öÇ½ÏSA5øù}ƒº&áóTM¡j5ìFšn—{Á£—ø,|_®]@Ñ;Àà n¹¹IÄn¥""³\ŞFÕyÃ""Z:ï,"	
+Setup Status2	0	
+Maximum Object ID	49	
+Admin Mode Root Object ID		
+Floppy Mode Root Object ID	2 : 1	
+Network Mode Root Object ID		
+Maintenance Mode Root Object ID	3 : 1	
+Network Maintenance Mode Root Object ID		
+Batch Mode Root Object ID	2 : 1	
+Suppress Serial Number Dialog		
+Install Date	2013.12.24.09.17.52	
+Check Modules2		
+Check Modules3		
+Check Modules4		
+
+
+ObjID	Checkbox State	Title	Description	Object Type	Object Data	Bitmap Id	Vital Attribute	Shared Attribute	Configurable Directory	Destination Directory	Check Directory	Installed By	Install Data	Install Directory
+1			Search for previous versions.	AppSearch	"""C:\GPLA\"", """", """", 12, ""yes"", ""yes"","					C:\GPLA\		us		C:\GPLA\
+2		Floppy Installation		AppMainDlg	5				yes	C:\GPLA\		us		C:\GPLA\
+3		Maintenance Installation		CustomDlg	7					C:\GPLA\				
+5	yes		Install all files for planilla 4089  VERSION Nº3	Group	7	"wizset32.dll, 111"						us		C:\GPLA\
+7	yes	planilla 4089  VERSION Nº3	planilla 4089  VERSION Nº3 will be installed.	Group	8 9 13 12 10 16 11 14 17							us		C:\GPLA\
+8			*** planilla 4089  VERSION Nº3 Files	CopyFile	"Application,_25U0SUSN5"		vital					us		C:\GPLA\
+9			*** planilla 4089  VERSION Nº3 Files	CopySection	Application		vital					us		C:\GPLA\
+10			Visual Foxpro Runtime	Group	35 36 37 39 40							us		C:\GPLA\
+11			Miscellanous files	Group	20		vital					us		C:\GPLA\
+12			OLEAUT32 System	Group	23 24 26 27 29 30		vital					nyi		
+13		Setup Message	Installation of this product requires system administrator privileges.	CustomAction	"wizset32.dll, DetectAdminPrivileges"							us		C:\GPLA\
+14			*** Post Setup Executable	Group	15							us		C:\GPLA\
+15			Post Setup Executable	CustomAction	"""wizset32.dll"", ""ExecutePostSetupCommand"", ""GPLA.EXE"""							us		C:\GPLA\
+16			VC Runtime	Group	32 33		vital					nyi		
+17			Uninstall	Group	43 44 45 46 47 48							us		C:\GPLA\
+20	yes			CopyFile	"Misc,GplaExe"					%D		us		C:\GPLA\
+23	yes			InstallSysFile	"System,Oleaut32Dll"							nyi		
+24	yes	OLEAUT32.DLL		Depend	23 ? 25							nyi		
+25	yes	OLEAUT32.DLL		SelfReg	"System,Oleaut32Dll"					%M		nyi		
+26	yes			InstallSysFile	"System,Olepro32Dll"							nyi		
+27	yes	OLEPRO32.DLL		Depend	26 ? 28							nyi		
+28	yes	OLEPRO32.DLL		SelfReg	"System,Olepro32Dll"					%M		nyi		
+29	yes			InstallSysFile	"System,AsycfiltDll"							nyi		
+30	yes			InstallSysFile	"System,Stdole2Tlb"							nyi		
+32	yes			InstallSysFile	"VC Runtime,MsvcrtDll"							nyi		
+33	yes			InstallSysFile	"VC Runtime,Msvcrt40Dll"							nyi		
+35	yes			InstallSysFile	"VFP Runtime,Vfp6renuDll"							us		C:\Windows\system32\
+36	yes			InstallSysFile	"VFP Runtime,Vfp6runExe"							us		C:\Windows\system32\
+37	yes	VFP6RUN.EXE		Depend	36 ? 38							us	Yes	C:\GPLA\
+38	yes	VFP6RUN.EXE		CustomAction	"""wizset32.dll"",""ExecutePostSetupCommand"",""VFP6RUN.EXE /RegServer"""					%M		us		C:\Windows\system32\
+39	yes			InstallSysFile	"VFP Runtime,Vfp6rDll"							us		C:\Windows\system32\
+40	yes	VFP6R.DLL		Depend	39 ? 41							us	Yes	C:\GPLA\
+41	yes	VFP6R.DLL		SelfReg	"VFP Runtime,Vfp6rDll"					%M		us		C:\Windows\system32\
+43				AddRegData	"LOCAL,Software\Microsoft\Windows\CurrentVersion\Uninstall\planilla 4089  VERSION Nº3 ,DisplayName,planilla 4089  VERSION Nº3 ,REG_SZ"							us		C:\GPLA\
+44				AddRegData	"LOCAL,Software\Microsoft\Windows\CurrentVersion\Uninstall\planilla 4089  VERSION Nº3 ,UninstallString,%s\setup\setup.exe,REG_SZ"					%d		us		C:\GPLA\
+45				CopySection	Setup					%d\setup		us		C:\GPLA\setup\
+46				CopyFile	"VC Runtime,Msvcrt40Dll"					%d\setup		us		C:\GPLA\setup\
+47				CopyFile	"VC Runtime,MsvcrtDll"					%d\setup		us		C:\GPLA\setup\
+48				WriteTableFile	setup.stf					%d\setup		us		C:\GPLA\setup\

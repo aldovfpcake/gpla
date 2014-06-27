@@ -1,0 +1,5 @@
+SELECT L4089.chofer, SUM(L4089.kmscu+ L4089.kms100) AS VIATICO,;
+  SUM(L4089.kmscu) AS NORMAL;
+ FROM l4089;
+ WHERE L4089.chofer = "?VVCHOF";
+   AND L4089.periodo = "?VVDO"
