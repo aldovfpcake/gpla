@@ -13,6 +13,8 @@ public vvchof,vvperiod
 VVCHOF = " "
 VVPERIOD = 0
 _SCREEN.WINDOWSTATE = 2
+_screen.Picture = 'C:\GPLA\HEAVEN.JPG'
+_screen.Caption = "Planilla de Kilometraje"
 SELECT 0
 USE INTERCAM
 DO MENPLA.MPR

@@ -1,12 +1,12 @@
 *       *********************************************************
 *       *                                                         
-*       * 06/27/14             MENPLA.MPR               11:42:23  
+*       * 02/11/16             MENPLA.MPR               16:31:48  
 *       *                                                         
 *       *********************************************************
 *       *                                                         
 *       * aldo ramon valente                                      
 *       *                                                         
-*       * Copyright (C) 2014 Company Name                         
+*       * Copyright (C) 2016 Company Name                         
 *       * Address                                                 
 *       * City,     Zip                                           
 *       *                                                         
@@ -26,18 +26,18 @@
 SET SYSMENU TO
 SET SYSMENU AUTOMATIC
 
-DEFINE PAD _43o0p3abv OF _MSYSMENU PROMPT "TALBLAS" COLOR SCHEME 3 ;
+DEFINE PAD _4ka0zfgyd OF _MSYSMENU PROMPT "TALBLAS" COLOR SCHEME 3 ;
 	KEY ALT+T, ""
-DEFINE PAD _43o0p3abw OF _MSYSMENU PROMPT "PLANILLA" COLOR SCHEME 3 ;
+DEFINE PAD _4ka0zfgye OF _MSYSMENU PROMPT "PLANILLA" COLOR SCHEME 3 ;
 	KEY ALT+P, ""
-DEFINE PAD _43o0p3abx OF _MSYSMENU PROMPT "ACERCA DE" COLOR SCHEME 3 ;
+DEFINE PAD _4ka0zfgyf OF _MSYSMENU PROMPT "ACERCA DE" COLOR SCHEME 3 ;
 	KEY ALT+A, ""
-DEFINE PAD _43o0p3aby OF _MSYSMENU PROMPT "SALIR" COLOR SCHEME 3 ;
+DEFINE PAD _4ka0zfgyg OF _MSYSMENU PROMPT "SALIR" COLOR SCHEME 3 ;
 	KEY ALT+S, ""
-ON PAD _43o0p3abv OF _MSYSMENU ACTIVATE POPUP talblas
-ON SELECTION PAD _43o0p3abw OF _MSYSMENU do form selecondu
-ON SELECTION PAD _43o0p3abx OF _MSYSMENU do form acerca
-ON SELECTION PAD _43o0p3aby OF _MSYSMENU CLEAR EVENTS
+ON PAD _4ka0zfgyd OF _MSYSMENU ACTIVATE POPUP talblas
+ON SELECTION PAD _4ka0zfgye OF _MSYSMENU do form selecondu
+ON SELECTION PAD _4ka0zfgyf OF _MSYSMENU do form acerca
+ON SELECTION PAD _4ka0zfgyg OF _MSYSMENU CLEAR EVENTS
 
 DEFINE POPUP talblas MARGIN RELATIVE SHADOW COLOR SCHEME 4
 DEFINE BAR 1 OF talblas PROMPT "DISTANCIAS"

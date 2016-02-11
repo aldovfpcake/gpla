@@ -1,1 +1,1 @@
-BUILD EXE f:\gpla.exe FROM f:\gpla.pjx recompile
+BUILD EXE c:\gpla\gpla.exe FROM c:\gpla\gpla.pjx recompile
